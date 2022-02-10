@@ -1,0 +1,18 @@
+>>> dna = dna + \
+... ’aaagagagat’
+>>> dna
+’ataaaaaaaaagtatgcgggcgcgggcgcgaaagagagat’
+>>> primers = [ ’aaaata’,
+... ’ggttgt’ ]
+>>> primers
+[’aaaata’, ’ggttgt’]
+>>> dna += ’aaataggat’; primers += [ ’ttgtta’ ]
+>>> dna
+’ataaaaaaaaagtatgcgggcgcgggcgcgaaagagagataaataggat’
+>>> primers
+[’aaaata’, ’ggttgt’, ’ttgtta’]
+>>> dna = ( dna +
+... ’tttat’ ) * 2
+>>> dna
+’ataaaaaaaaagtatgcgggcgcgggcgcgaaagagagataaataggattttatataaaaaaaaagtat
+gcgggcgcgggcgcgaaagagagataaataggattttat’
